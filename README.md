@@ -32,7 +32,7 @@ The dashboard helps users organize their tasks, track their progress, and manage
 **1. Clone the repository**
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/Sarah-Shaik/FocusBoard
 ```
 
 **2. Open the project folder**
@@ -93,9 +93,9 @@ Mobile New Task Form (focusboard/screenshots/MobileNewTaskForm.png)
 
 ## Live Demo
 
-**Hosted URL:** Add your deployed application link here.
+**Hosted URL:** [https://focusboard-chi-one.vercel.app]
 
-**GitHub Repository:** Add your GitHub repository link here.
+**GitHub Repository:** [https://github.com/Sarah-Shaik/FocusBoard]
 
 ## Limitations
 
