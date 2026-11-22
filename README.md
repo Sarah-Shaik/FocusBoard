@@ -38,7 +38,7 @@ git clone https://github.com/Sarah-Shaik/FocusBoard
 **2. Open the project folder**
 
 ```bash
-cd focusboard
+cd FocusBoard/focusboard
 ```
 
 **3. Install dependencies**
@@ -79,23 +79,25 @@ The Focus Notes component uses its own state to manage the active slide.
 
 ### Desktop
 
-Desktop Dashboard (focusboard/screenshots/DesktopDashboard.png)
-Desktop New Task Form (focusboard/screenshots/DesktopNewTaskForm.png)
+![Desktop Dashboard](screenshots/DesktopDashboard.png)
+
+![Desktop New Task Form](screenshots/DesktopNewTaskForm.png)
 
 ### Tablet
 
-Tablet Dashboard (focusboard/screenshots/TabletDashboard.png)
+![Tablet Dashboard](screenshots/TabletDashboard.png)
 
 ### Mobile
 
-Mobile Dashboard (focusboard/screenshots/MobileDashboard.png)
-Mobile New Task Form (focusboard/screenshots/MobileNewTaskForm.png)
+![Mobile Dashboard](screenshots/MobileDashboard.png)
+
+![Mobile New Task Form](screenshots/MobileNewTaskForm.png)
 
 ## Live Demo
 
-**Hosted URL:** [https://focusboard-chi-one.vercel.app]
+[URL](https://focusboard-chi-one.vercel.app)
 
-**GitHub Repository:** [https://github.com/Sarah-Shaik/FocusBoard]
+[GitHub Repository](https://github.com/Sarah-Shaik/FocusBoard)
 
 ## Limitations
 

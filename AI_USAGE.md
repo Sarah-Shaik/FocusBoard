@@ -12,9 +12,21 @@ The main areas where I used AI assistance were:
 
 - Understanding the requirements for the project.
 - Working on CSS styling and responsive layouts for desktop, tablet, and mobile screens.
+- Getting code suggestions and help with fixing issues during development.
 - Understanding errors and fixing issues during development.
 - Reviewing the code for readability and unnecessary complexity.
 - Getting help with documentation.
+
+## Example Prompts
+
+- How can I fix CSS spacing and alignment issues to match the Figma design?
+- Why am I getting an error when running `npm run build`?
+- Can you review my React code and check whether it is simple and readable?
+- How do I add screenshots and prepare the README for my assignment?
+
+## Suggestion I Checked
+
+While reviewing the project, I received a suggestion to change the mobile Focus Notes section. I checked it against the mobile Figma design and decided to keep the existing layout because it matched the provided reference.
 
 ## How I Worked on the Project
 
