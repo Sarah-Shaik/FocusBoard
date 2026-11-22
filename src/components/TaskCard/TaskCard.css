@@ -1,0 +1,272 @@
+.task-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-width: 0;
+  min-height: 79px;
+  padding: 16px 18px;
+  border: 1px solid #e7eaf2;
+  border-radius: 13px;
+  background-color: #ffffff;
+  overflow: visible;
+}
+
+.task-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.task-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0eeff;
+  color: #6457f5;
+  cursor: pointer;
+}
+
+.task-checkbox:not(.checked)::after {
+  content: '';
+  width: 11px;
+  height: 11px;
+  border: 1.5px solid #6457f5;
+  border-radius: 4px;
+}
+
+.task-checkbox.checked {
+  background-color: #e6f8f2;
+  color: #0ba77e;
+}
+
+.task-info {
+  min-width: 0;
+}
+
+.task-info h3 {
+  margin: 0 0 5px;
+  color: #16213b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.task-info p {
+  margin: 0;
+  color: #68758e;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.task-title-completed {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
+.task-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.task-category,
+.task-priority {
+  min-width: 76px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.task-category {
+  background-color: #f0eeff;
+  color: #6457f5;
+}
+
+.task-priority.high {
+  background-color: #fff1df;
+  color: #c47b13;
+}
+
+.task-priority.medium,
+.task-priority.low {
+  background-color: #e9f7f3;
+  color: #078d73;
+}
+
+.task-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 75px;
+  color: #68758e;
+  font-size: 11px;
+}
+
+.task-menu-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.task-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #68758e;
+  cursor: pointer;
+}
+
+.task-more:hover {
+  background-color: #f5f4ff;
+}
+
+.task-dropdown {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  z-index: 20;
+  width: 145px;
+  padding: 5px;
+  border: 1px solid #e7eaf2;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px #141B311F;
+}
+
+.task-dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #273451;
+  font-size: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.task-dropdown button:hover {
+  background-color: #f5f4ff;
+}
+
+.task-dropdown .delete-option {
+  color: #d93656;
+}
+
+.task-checkbox:focus-visible,
+.task-more:focus-visible,
+.task-dropdown button:focus-visible {
+  outline: 2px solid #6457f5;
+  outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+  .task-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 122px;
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .task-main {
+    width: 100%;
+    padding-right: 32px;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .task-checkbox {
+    width: 26px;
+    height: 26px;
+  }
+
+  .task-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .task-info h3 {
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+
+  .task-info p {
+    font-size: 10px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .task-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    width: 100%;
+    padding-left: 36px;
+  }
+
+  .task-category,
+  .task-priority {
+    min-width: 0;
+    padding: 5px 9px;
+    font-size: 9px;
+    line-height: 1;
+  }
+
+  .task-date {
+    min-width: 0;
+    margin-left: 0;
+    gap: 4px;
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  .task-date svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .task-menu-wrapper {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    margin-left: 0;
+  }
+
+  .task-more {
+    width: 28px;
+    height: 28px;
+  }
+
+  .task-dropdown {
+    top: 30px;
+    right: 0;
+  }
+}

@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 85px;
+  flex-shrink: 0;
+  padding: 0 44px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ebf2;
+}
+
+.header-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.breadcrumb-workspace {
+  color: #68758e;
+  font-weight: 400;
+}
+
+.breadcrumb-divider {
+  color: #c4cad7;
+}
+
+.breadcrumb-current {
+  color: #16213b;
+  font-weight: 700;
+}
+
+/* Profile */
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #73809a;
+}
+
+.profile-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #ddd8ff;
+  color: #6457f5;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.mobile-brand {
+  display: none;
+}
+
+
+@media (max-width: 1024px) {
+  .header {
+    height: 81px;
+    padding: 0 20px;
+  }
+
+  .header-breadcrumb {
+    display: none;
+  }
+
+  .mobile-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #16213b;
+  }
+
+  .mobile-brand-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #7066ff, #5246db);
+    color: #ffffff;
+  }
+
+  .mobile-brand-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header-profile {
+    margin-left: auto;
+  }
+
+  .header-profile > svg {
+    display: none;
+  }
+
+  .profile-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 11px;
+  }
+}

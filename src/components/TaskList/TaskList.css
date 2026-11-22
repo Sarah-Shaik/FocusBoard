@@ -1,0 +1,31 @@
+
+.task-list-section {
+  margin-top: 16px;
+  min-width: 0;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.empty-tasks {
+  padding: 30px;
+  border: 1px solid #e7eaf2;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #68758e;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .task-list-section {
+    margin-top: 12px;
+  }
+
+  .task-list {
+    gap: 10px;
+  }
+}
